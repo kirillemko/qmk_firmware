@@ -243,6 +243,7 @@ void raw_hid_receive(uint8_t *data, uint8_t length) {
                 }
                 default: {
                     raw_hid_receive_kb(data, length);
+                    return;
                     break;
                 }
             }
